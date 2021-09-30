@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Snoopy</title>
+    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+
+    <style>
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 150%;
+            line-height: 1.4;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+        /* https://github.com/videojs/video.js/issues/178 */
+        /* https://faq.dailymotion.com/hc/en-us/articles/360022841393-How-to-preserve-the-player-aspect-ratio-on-a-responsive-page */
+    </style>
+</head>
+
+<body>
+    <video autoplay loop controls playsinline>
+        <source src="https://kwangwoon-syllabus.s3.ap-northeast-2.amazonaws.com/Snoopy_582.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+
+</html>
